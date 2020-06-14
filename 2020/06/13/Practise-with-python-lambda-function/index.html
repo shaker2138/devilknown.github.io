@@ -1,0 +1,643 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Adnan Rahman">
+    <title>Practise with python lambda function - Adnan Rahman</title>
+    <meta name="author" content="Adnan Rahman">
+    
+    
+        <link rel="icon" href="http://yoursite.com/assets/images/favicon">
+    
+    
+        
+            <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
+        
+    
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Adnan Rahman","sameAs":["https://github.com/adnanibnamotin","http://stackoverflow.com/users/9049379","https://twitter.com/@adnanibnamotin","https://facebook.com/devilknown","https://www.linkedin.com/in/adnanibnamotin"],"image":"avater.jpg"},"articleBody":"","dateCreated":"2020-06-13T13:18:26-04:00","dateModified":"2020-06-13T18:21:52-04:00","datePublished":"2020-06-13T13:18:26-04:00","description":"","headline":"Practise with python lambda function","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://yoursite.com/2020/06/13/Practise-with-python-lambda-function/"},"publisher":{"@type":"Organization","name":"Adnan Rahman","sameAs":["https://github.com/adnanibnamotin","http://stackoverflow.com/users/9049379","https://twitter.com/@adnanibnamotin","https://facebook.com/devilknown","https://www.linkedin.com/in/adnanibnamotin"],"image":"avater.jpg","logo":{"@type":"ImageObject","url":"avater.jpg"}},"url":"http://yoursite.com/2020/06/13/Practise-with-python-lambda-function/","keywords":"Python"}</script>
+    <meta property="og:type" content="blog">
+<meta property="og:title" content="Practise with python lambda function">
+<meta property="og:url" content="http://yoursite.com/2020/06/13/Practise-with-python-lambda-function/index.html">
+<meta property="og:site_name" content="Adnan Rahman">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-06-13T17:18:26.000Z">
+<meta property="article:modified_time" content="2020-06-13T22:21:52.109Z">
+<meta property="article:author" content="Adnan Rahman">
+<meta property="article:tag" content="Python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@adnanibnamotin">
+    
+    
+        
+    
+    
+        <meta property="og:image" content="http://yoursite.com/assets/images/avater.jpg"/>
+    
+    
+    
+    
+    <!--STYLES-->
+    
+<link rel="stylesheet" href="/assets/css/style-chhlslkgn463ki3ygjc3xru2vvb32rhsk4lktv1e4rymtxcsbrchii11edwg.min.css">
+
+    <!--STYLES END-->
+    
+
+    
+
+    
+        
+    
+</head>
+
+    <body>
+        <div id="blog">
+            <!-- Define author's picture -->
+
+
+    
+        
+            
+        
+    
+
+<header id="header" data-behavior="4">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <div class="header-title">
+        <a
+            class="header-title-link"
+            href="/"
+            aria-label=""
+        >
+            Adnan Rahman
+        </a>
+    </div>
+    
+        
+            <a
+                class="header-right-picture "
+                href="#about"
+                aria-label="Open the link: /#about"
+            >
+        
+        
+            <img class="header-picture" src="/assets/images/avater.jpg" alt="Author&#39;s picture"/>
+        
+        </a>
+    
+</header>
+
+            <!-- Define author's picture -->
+
+
+
+        
+    
+
+<nav id="sidebar" data-behavior="4">
+    <div class="sidebar-container">
+        
+            <div class="sidebar-profile">
+                <a
+                    href="/#about"
+                    aria-label="Read more about the author"
+                >
+                    <img class="sidebar-profile-picture" src="/assets/images/avater.jpg" alt="Author&#39;s picture"/>
+                </a>
+                <h4 class="sidebar-profile-name">Adnan Rahman</h4>
+                
+                    <h5 class="sidebar-profile-bio"><p>Work hard, Be patience &amp; Don’t ever give up</p>
+</h5>
+                
+            </div>
+        
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/"
+                            
+                            rel="noopener"
+                            title="Home"
+                        >
+                        <i class="sidebar-button-icon fa fa-home" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Home</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/all-categories"
+                            
+                            rel="noopener"
+                            title="Categories"
+                        >
+                        <i class="sidebar-button-icon fa fa-bookmark" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Categories</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/all-tags"
+                            
+                            rel="noopener"
+                            title="Tags"
+                        >
+                        <i class="sidebar-button-icon fa fa-tags" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Tags</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/all-archives"
+                            
+                            rel="noopener"
+                            title="Archives"
+                        >
+                        <i class="sidebar-button-icon fa fa-archive" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Archives</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="#about"
+                            
+                            rel="noopener"
+                            title="About"
+                        >
+                        <i class="sidebar-button-icon fa fa-question" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">About</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="https://github.com/adnanibnamotin"
+                            
+                                target="_blank"
+                            
+                            rel="noopener"
+                            title="GitHub"
+                        >
+                        <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">GitHub</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="http://stackoverflow.com/users/9049379"
+                            
+                                target="_blank"
+                            
+                            rel="noopener"
+                            title="Stack Overflow"
+                        >
+                        <i class="sidebar-button-icon fab fa-stack-overflow" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Stack Overflow</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="https://twitter.com/@adnanibnamotin"
+                            
+                                target="_blank"
+                            
+                            rel="noopener"
+                            title="Twitter"
+                        >
+                        <i class="sidebar-button-icon fab fa-twitter" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Twitter</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="https://facebook.com/devilknown"
+                            
+                                target="_blank"
+                            
+                            rel="noopener"
+                            title="Facebook"
+                        >
+                        <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Facebook</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="https://www.linkedin.com/in/adnanibnamotin"
+                            
+                                target="_blank"
+                            
+                            rel="noopener"
+                            title="LinkedIn"
+                        >
+                        <i class="sidebar-button-icon fab fa-linkedin" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">LinkedIn</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+            
+            <div id="main" data-behavior="4"
+                 class="
+                        hasCoverMetaIn
+                        ">
+                
+<article class="post">
+    
+    
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title">
+            Practise with python lambda function
+        </h1>
+    
+    
+        <div class="post-meta">
+    <time datetime="2020-06-13T13:18:26-04:00">
+	
+		    Jun 13, 2020
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/Python-built-in-function/">Python built-in function</a>
+
+
+    
+</div>
+
+    
+</div>
+
+    
+    <div class="post-content markdown">
+        <div class="main-content-wrap">
+            
+            
+
+
+        </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/Python/" rel="tag">Python</a>
+
+            </div>
+        
+        
+            <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                    </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                <a
+                    class="post-action-btn btn btn--default tooltip--top"
+                    href="/2020/06/13/hello-world/"
+                    data-tooltip="Hello World"
+                    aria-label="NEXT: Hello World"
+                >
+                    
+                        <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a
+                class="post-action-btn btn btn--default btn-open-shareoptions"
+                href="#btn-open-shareoptions"
+                aria-label="Share this post"
+            >
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a
+                    class="post-action-btn btn btn--default"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/06/13/Practise-with-python-lambda-function/"
+                    title="Share on Facebook"
+                    aria-label="Share on Facebook"
+                >
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a
+                    class="post-action-btn btn btn--default"
+                    target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2020/06/13/Practise-with-python-lambda-function/"
+                    title="Share on Twitter"
+                    aria-label="Share on Twitter"
+                >
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a
+                    class="post-action-btn btn btn--default"
+                    target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://yoursite.com/2020/06/13/Practise-with-python-lambda-function/"
+                    title="global.share_on_linkedin"
+                    aria-label="global.share_on_linkedin"
+                >
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+        
+        
+            
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2020 Adnan Rahman. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                    </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                <a
+                    class="post-action-btn btn btn--default tooltip--top"
+                    href="/2020/06/13/hello-world/"
+                    data-tooltip="Hello World"
+                    aria-label="NEXT: Hello World"
+                >
+                    
+                        <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a
+                class="post-action-btn btn btn--default btn-open-shareoptions"
+                href="#btn-open-shareoptions"
+                aria-label="Share this post"
+            >
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a
+                    class="post-action-btn btn btn--default"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/06/13/Practise-with-python-lambda-function/"
+                    title="Share on Facebook"
+                    aria-label="Share on Facebook"
+                >
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a
+                    class="post-action-btn btn btn--default"
+                    target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2020/06/13/Practise-with-python-lambda-function/"
+                    title="Share on Twitter"
+                    aria-label="Share on Twitter"
+                >
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a
+                    class="post-action-btn btn btn--default"
+                    target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://yoursite.com/2020/06/13/Practise-with-python-lambda-function/"
+                    title="global.share_on_linkedin"
+                    aria-label="global.share_on_linkedin"
+                >
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                
+    <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+        <i id="btn-close-shareoptions" class="fa fa-times"></i>
+        <ul class="share-options">
+            
+                
+                
+                <li class="share-option">
+                    <a
+                        class="share-option-btn"
+                        target="new"
+                        href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/06/13/Practise-with-python-lambda-function/"
+                        aria-label="Share on Facebook"
+                    >
+                        <i class="fab fa-facebook" aria-hidden="true"></i><span>Share on Facebook</span>
+                    </a>
+                </li>
+            
+                
+                
+                <li class="share-option">
+                    <a
+                        class="share-option-btn"
+                        target="new"
+                        href="https://twitter.com/intent/tweet?text=http://yoursite.com/2020/06/13/Practise-with-python-lambda-function/"
+                        aria-label="Share on Twitter"
+                    >
+                        <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+                    </a>
+                </li>
+            
+                
+                
+                <li class="share-option">
+                    <a
+                        class="share-option-btn"
+                        target="new"
+                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://yoursite.com/2020/06/13/Practise-with-python-lambda-function/"
+                        aria-label="global.share_on_linkedin"
+                    >
+                        <i class="fab fa-linkedin" aria-hidden="true"></i><span>global.share_on_linkedin</span>
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+
+
+            
+        </div>
+        
+
+
+    
+        
+    
+
+<div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-times"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/avater.jpg" alt="Author&#39;s picture"/>
+        
+            <h4 id="about-card-name">Adnan Rahman</h4>
+        
+            <div id="about-card-bio"><p>Work hard, Be patience &amp; Don’t ever give up</p>
+</div>
+        
+        
+            <div id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>Data Scientist</p>
+
+            </div>
+        
+        
+            <div id="about-card-location">
+                <i class="fa fa-map-marker-alt"></i>
+                <br/>
+                New York, USA
+            </div>
+        
+    </div>
+</div>
+
+        
+        
+<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+        <!--SCRIPTS-->
+
+<script src="/assets/js/script-szeuzkppqrg3wvsx5ogj2tcxb1zatxj430gxhmwsr6w2spdiyrxehpxkk60e.min.js"></script>
+
+<!--SCRIPTS END-->
+
+
+    
+
+
+
+
+    </body>
+</html>
