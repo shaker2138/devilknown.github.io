@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-13T22:21:52.109Z</updated>
+  <updated>2020-07-08T22:45:41.964Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,21 +17,21 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Practise with python lambda function</title>
-    <link href="http://yoursite.com/2020/06/13/Practise-with-python-lambda-function/"/>
-    <id>http://yoursite.com/2020/06/13/Practise-with-python-lambda-function/</id>
+    <title>Welcome to C++ world</title>
+    <link href="http://yoursite.com/2020/06/13/Welcome-to-C++-world/"/>
+    <id>http://yoursite.com/2020/06/13/Welcome-to-C++-world/</id>
     <published>2020-06-13T17:18:26.000Z</published>
-    <updated>2020-06-13T22:21:52.109Z</updated>
+    <updated>2020-07-08T22:45:41.964Z</updated>
     
     <summary type="html">
     
     </summary>
     
     
-      <category term="Python built-in function" scheme="http://yoursite.com/categories/Python-built-in-function/"/>
+      <category term="Introduction to C++" scheme="http://yoursite.com/categories/Introduction-to-C/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
     
   </entry>
   
